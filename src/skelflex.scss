@@ -1,0 +1,160 @@
+/** {f:'skelflex.scss', v:1.0, d:'2017-11-10'}, a:'matop@pim.sk' **/
+$small	:  736px;
+$medium	:  980px;
+$large	: 1280px;
+$xlarge	: 1281px;
+
+$12u: 100%;
+$11u: 91.6666666667%;
+$10u: 83.3333333333%;
+$9u : 75%;
+$8u : 66.6666666667%;
+$7u : 58.3333333333%;
+$6u : 50%;
+$5u : 41.6666666667%;
+$4u : 33.3333333333%;
+$3u : 25%;
+$2u : 16.6666666667%;
+$1u : 8.3333333333%;
+
+.row {
+	width:100%;
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+	box-sizing: border-box;
+	> * {
+		box-sizing: border-box;
+		margin:0; padding:0;
+		max-width: 100%;
+	}
+	&.auto > *, > .auto {
+		flex:auto;
+	}
+	> .\31 2u { width: $12u } 
+	> .\31 1u { width: $11u } 
+	> .\31 0u { width: $10u } 
+	> .\39 u  { width: $9u } 
+	> .\38 u  { width: $8u }
+	> .\37 u  { width: $7u }
+	> .\36 u  { width: $6u }
+	> .\35 u  { width: $5u }
+	> .\34 u  { width: $4u }
+	> .\33 u  { width: $3u }
+	> .\32 u  { width: $2u }
+	> .\31 u  { width: $1u }
+}
+@media screen and (min-width: $xlarge) {
+	.row {
+		> .\31 2u\28xlarge\29 { width: $12u } 
+		> .\31 1u\28xlarge\29 { width: $11u } 
+		> .\31 0u\28xlarge\29 { width: $10u } 
+		> .\39 u\28xlarge\29  { width: $9u } 
+		> .\38 u\28xlarge\29  { width: $8u }
+		> .\37 u\28xlarge\29  { width: $7u }
+		> .\36 u\28xlarge\29  { width: $6u }
+		> .\35 u\28xlarge\29  { width: $5u }
+		> .\34 u\28xlarge\29  { width: $4u }
+		> .\33 u\28xlarge\29  { width: $3u }
+		> .\32 u\28xlarge\29  { width: $2u }
+		> .\31 u\28xlarge\29  { width: $1u }
+	}
+}
+@media screen and (max-width: $large) {
+	.row {
+		> .\31 2u\28large\29 { width: $12u } 
+		> .\31 1u\28large\29 { width: $11u } 
+		> .\31 0u\28large\29 { width: $10u } 
+		> .\39 u\28large\29  { width: $9u } 
+		> .\38 u\28large\29  { width: $8u }
+		> .\37 u\28large\29  { width: $7u }
+		> .\36 u\28large\29  { width: $6u }
+		> .\35 u\28large\29  { width: $5u }
+		> .\34 u\28large\29  { width: $4u }
+		> .\33 u\28large\29  { width: $3u }
+		> .\32 u\28large\29  { width: $2u }
+		> .\31 u\28large\29  { width: $1u }
+	}
+}
+@media screen and (max-width: $medium) {
+	.row {
+		> .\31 2u\28medium\29 { width: $12u } 
+		> .\31 1u\28medium\29 { width: $11u } 
+		> .\31 0u\28medium\29 { width: $10u } 
+		> .\39 u\28medium\29  { width: $9u } 
+		> .\38 u\28medium\29  { width: $8u }
+		> .\37 u\28medium\29  { width: $7u }
+		> .\36 u\28medium\29  { width: $6u }
+		> .\35 u\28medium\29  { width: $5u }
+		> .\34 u\28medium\29  { width: $4u }
+		> .\33 u\28medium\29  { width: $3u }
+		> .\32 u\28medium\29  { width: $2u }
+		> .\31 u\28medium\29  { width: $1u }
+	}
+}
+@media screen and (max-width: $small) {
+	.row {
+		> .\31 2u\28small\29 { width: $12u } 
+		> .\31 1u\28small\29 { width: $11u } 
+		> .\31 0u\28small\29 { width: $10u } 
+		> .\39 u\28small\29  { width: $9u } 
+		> .\38 u\28small\29  { width: $8u }
+		> .\37 u\28small\29  { width: $7u }
+		> .\36 u\28small\29  { width: $6u }
+		> .\35 u\28small\29  { width: $5u }
+		> .\34 u\28small\29  { width: $4u }
+		> .\33 u\28small\29  { width: $3u }
+		> .\32 u\28small\29  { width: $2u }
+		> .\31 u\28small\29  { width: $1u }
+	}
+}
+
+.left { text-align: left; }
+.center { text-align:center; }
+.right { text-align: right; }
+.justify { text-align: justify; }
+.noshow { display: none; }
+.top {align-self: flex-start;}
+.middle {align-self: center;}
+.bottom {align-self: flex-end;}
+
+@media screen and (min-width: $xlarge) {
+	.left\28xlarge\29 { text-align: left; }
+	.center\28xlarge\29 { text-align:center; }
+	.right\28xlarge\29 { text-align: right; }
+	.justify\28xlarge\29 { text-align: justify; }
+	.noshow\28xlarge\29 { display: none; }
+	.top\28xlarge\29 {align-self: flex-start;}
+	.middle\28xlarge\29 {align-self: center;}
+	.bottom\28xlarge\29 {align-self: flex-end;}
+}
+@media screen and (max-width: $large) {
+	.left\28large\29 { text-align: left; }
+	.center\28large\29 { text-align:center; }
+	.right\28large\29 { text-align: right; }
+	.justify\28large\29 { text-align: justify; }
+	.noshow\28large\29 { display: none; }
+	.top\28large\29 {align-self: flex-start;}
+	.middle\28large\29 {align-self: center;}
+	.bottom\28large\29 {align-self: flex-end;}
+}
+@media screen and (max-width: $medium) {
+	.left\28medium\29 { text-align: left; }
+	.center\28medium\29 { text-align:center; }
+	.right\28medium\29 { text-align: right; }
+	.justify\28medium\29 { text-align: justify; }
+	.noshow\28medium\29 { display: none; }
+	.top\28medium\29 {align-self: flex-start;}
+	.middle\28medium\29 {align-self: center;}
+	.bottom\28medium\29 {align-self: flex-end;}
+}
+@media screen and (max-width: $small) {
+	.left\28small\29 { text-align: left; }
+	.center\28small\29 { text-align:center; }
+	.right\28small\29 { text-align: right; }
+	.justify\28small\29 { text-align: justify; }
+	.noshow\28small\29 { display: none; }
+	.top\28small\29 {align-self: flex-start;}
+	.middle\28small\29 {align-self: center;}
+	.bottom\28small\29 {align-self: flex-end;}
+}
